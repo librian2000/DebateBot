@@ -1,0 +1,226 @@
+.page_container {
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .landing_section {
+    background: black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    .title {
+      font-size: 3em;
+      color: white;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      color: white;
+      width: 80%;
+    }
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .background-image-odd {
+      display: none;
+      &.active {
+        display: block;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+    }
+    .background-image-odd {
+      display: none;
+      &.active {
+        display: block;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+    }
+  }
+  .showcase_section {
+    width: 100%;
+    height: auto;
+    .image_container {
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .image_card {
+        .image_shadow {
+          padding: 5px;
+          border-radius: 8px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        font-size: 1.1em;
+      }
+    }
+  }
+  .section_container {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    width: 100%;
+    .section_title {
+      text-align: center;
+      height: fit-content;
+      font-size: 9vw;
+      color: white;
+    }
+    .section_content {
+      width: 90%;
+      color: white;
+
+      height: fit-content;
+      font-size: 1.1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+
+      .profile_card {
+        margin: 10px;
+        text-align: center;
+
+        .alias {
+          color: white;
+
+          font-size: 1.5em;
+          padding-bottom: 8px;
+        }
+
+        .bio {
+          padding-top: 8px;
+
+          color: white;
+          text-align: left;
+
+          font-size: 1em;
+          width: 250px;
+        }
+      }
+    }
+  }
+  .footer_section {
+    background: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .footer_columns {
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      gap: 20px;
+      .column {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        .title {
+          font-size: 2em;
+          color: white;
+          padding-bottom: 10px;
+        }
+        .subtitle {
+          font-size: 1.1em;
+          color: white;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .bottom {
+      color: white;
+      text-align: left;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .large_text {
+    height: 25vw;
+    color: black;
+    font-size: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mint_button {
+    background: white;
+    padding: 15px;
+    color: black;
+    border-radius: 8px;
+    &:hover {
+      cursor: pointer;
+      background: lightgray;
+    }
+    margin-top: 10px;
+  }
+
+  .chatbox-wrapper{
+    background: white;
+    padding: 55px;
+    margin-top: 10px;
+  }
+
+  .chatbox-section-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 40px;
+  }
+}
